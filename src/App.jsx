@@ -79,7 +79,7 @@ export default function App() {
         </div>
       </Section>
 
-      <Section id="book" title="Let's talk" intro="A 20-minute intro call is free. Bring your messiest spreadsheet.">
+      <Section id="book" title="Let's talk" intro="A 30-minute intro call is free. Bring your messiest spreadsheet.">
         <div className="book">
           <a className="btn big" href={SCHEDULER_URL} target="_blank" rel="noreferrer">Pick a time</a>
           <p>Or write to <a href={'mailto:' + profile.email}>{profile.email}</a> · <a href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn</a></p>

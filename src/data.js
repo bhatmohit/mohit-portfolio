@@ -1,5 +1,5 @@
 // ✏️ Edit everything about the site here.
-export const SCHEDULER_URL = 'https://calendly.com/YOUR-HANDLE/intro-call' // TODO: paste your Calendly / Cal.com link
+export const SCHEDULER_URL = 'https://calendly.com/bhatmohit070/30min' // TODO: paste your Calendly / Cal.com link
 export const base = import.meta.env.BASE_URL
 
 export const profile = {

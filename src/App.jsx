@@ -71,7 +71,7 @@ export default function App() {
                   <rect x={x} y={170 - b.h} width="42" height={b.h} rx="3" fill={b.c} />
                   <text transform={`translate(${x + 26},${170 - b.h + 12}) rotate(90)`} fontSize="12" fill={b.d ? '#17203A' : '#fff'} fontFamily="Bricolage Grotesque">{b.t}</text>
                 </g>); acc.x += 48; return acc }, { x: 8, els: [] }).els}
-              <rect x="0" y="170" width="360" height="8" rx="3" fill="#17203A" />
+              <rect x="0" y="170" width="360" height="8" rx="3" fill="#9AA6CC" />
             </svg>
             <p><b>Literature.</b> {interests.literature}</p>
             <p><b>Philosophy.</b> {interests.philosophy}</p>
@@ -79,7 +79,7 @@ export default function App() {
         </div>
       </Section>
 
-      <Section id="book" title="Let's talk" intro="A 30-minute intro call is free. Bring your messiest spreadsheet.">
+      <Section id="book" title="Let's talk" intro="A 20-minute intro call is free. Bring your messiest spreadsheet.">
         <div className="book">
           <a className="btn big" href={SCHEDULER_URL} target="_blank" rel="noreferrer">Pick a time</a>
           <p>Or write to <a href={'mailto:' + profile.email}>{profile.email}</a> · <a href={profile.linkedin} target="_blank" rel="noreferrer">LinkedIn</a></p>

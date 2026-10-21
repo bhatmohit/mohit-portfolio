@@ -4,8 +4,10 @@ export const base = import.meta.env.BASE_URL
 
 export const profile = {
   name: 'Mohit Bhat',
-  headline: 'I make messy student and member data behave.',
-  sub: 'CRM and data work for education organizations, nonprofits and small teams. Clean records, clear reports, workflows people actually use.',
+  // headline: 'I make messy student and member data behave.',
+  headline: 'Web Developer | Data Analyst | Problem Solver',
+  // sub: 'CRM and data work for education organizations, nonprofits and small teams. Clean records, clear reports, workflows people actually use.',
+  sub: 'I like building things, analyzing data, and solving problems',
   email: 'bhatmohit070@gmail.com',
   linkedin: 'https://www.linkedin.com/in/bhatmohit',
   location: 'Navi Mumbai, India · works with US & India time zones',

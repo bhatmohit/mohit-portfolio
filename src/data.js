@@ -38,10 +38,10 @@ export const projects = [
   { name: 'Study Habits App', blurb: 'A React web app for building and tracking study habits. A hands-on sample of how I turn an idea into something people can click through.',
     repo: 'https://github.com/bhatmohit/study-habits-app', live: 'https://bhatmohit.github.io/study-habits-app/', stack: ['React', 'GitHub Pages'] },
 
-  { name: 'FIFA Scout Pro', blurb: 'To develop a model that would help scouts pick best players for their teams by identifying patterns and relationships between different variables, including age, position and physical attributes.',
+  { name: 'FIFA Scout Pro', blurb: 'Developed a model that would help scouts pick best players for their teams by identifying patterns and relationships between different variables, including age, position and physical attributes.',
     repo: 'https://github.com/bhatmohit/FIFA_ScoutPro.git', stack: ['Python', 'Machine Learning (KNN, Random Forest)'] },
 
-  { name: 'Financial Statement Analysis', blurb: 'To develop a model that would help scouts pick best players for their teams by identifying patterns and relationships between different variables, including age, position and physical attributes.',
+  { name: 'Financial Statement Analysis', blurb: 'Performed sentiment analysis on MD&A data to evaluate performance of company. Trained models to predict financial misstatements.',
     repo: 'https://github.com/bhatmohit/Financial_Statement_Analysis.git', stack: ['Python', 'Machine Learning (OLS, Logistic Regression)', 'Sentiment Analysis'] },  
 ]
 

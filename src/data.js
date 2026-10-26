@@ -6,11 +6,11 @@ export const profile = {
   name: 'Mohit Bhat',
   // headline: 'I make messy student and member data behave.',
   headline: 'Web Developer | Data Analyst | Problem Solver',
-  // sub: 'CRM and data work for education organizations, nonprofits and small teams. Clean records, clear reports, workflows people actually use.',
-  sub: 'I like building things, analyzing data, and solving problems',
+  sub: 'At my core, I like deriving meaning from raw data. I build the systems, reports, and automations that make complex information clear and actionable - helping teams make better decisions and save time on manual tasks.',
+  // sub: 'I like building things, automating workflows, and solving problems',
   email: 'bhatmohit070@gmail.com',
   linkedin: 'https://www.linkedin.com/in/bhatmohit',
-  location: 'Navi Mumbai, India · works with US & India time zones',
+  // location: 'Mumbai, India · works with US & India time zones',
 }
 
 export const services = [
@@ -37,6 +37,12 @@ export const caseStudy = {
 export const projects = [
   { name: 'Study Habits App', blurb: 'A React web app for building and tracking study habits. A hands-on sample of how I turn an idea into something people can click through.',
     repo: 'https://github.com/bhatmohit/study-habits-app', live: 'https://bhatmohit.github.io/study-habits-app/', stack: ['React', 'GitHub Pages'] },
+
+  { name: 'FIFA Scout Pro', blurb: 'To develop a model that would help scouts pick best players for their teams by identifying patterns and relationships between different variables, including age, position and physical attributes.',
+    repo: 'https://github.com/bhatmohit/FIFA_ScoutPro.git', stack: ['Python', 'Machine Learning (KNN, Random Forest)'] },
+
+  { name: 'Financial Statement Analysis', blurb: 'To develop a model that would help scouts pick best players for their teams by identifying patterns and relationships between different variables, including age, position and physical attributes.',
+    repo: 'https://github.com/bhatmohit/Financial_Statement_Analysis.git', stack: ['Python', 'Machine Learning (OLS, Logistic Regression)', 'Sentiment Analysis'] },  
 ]
 
 export const experience = [

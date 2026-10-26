@@ -12,7 +12,8 @@ export default function App() {
   return (<>
     <header className="nav"><div className="wrap navin">
       <a href="#top" className="logo">Mohit Bhat</a>
-      <nav>{[['work','Work'],['services','Services'],['about','About'],['book','Book a call']].map(([h,l]) => <a key={h} href={'#'+h}>{l}</a>)}</nav>
+      {/* <nav>{[['services','Services'],['projects','Projects'],['about','About'],['book','Book a call']].map(([h,l]) => <a key={h} href={'#'+h}>{l}</a>)}</nav> */}
+      <nav>{[['top', 'About Me'], ['projects','Projects'],['experience','Experience'],['book','Book a call']].map(([h,l]) => <a key={h} href={'#'+h}>{l}</a>)}</nav>
     </div></header>
 
     <main id="top">
@@ -23,39 +24,44 @@ export default function App() {
           <p className="lede">{profile.sub}</p>
           <div className="cta">
             <a className="btn" href="#book">Book a free intro call</a>
-            <a className="btn ghost" href="#work">See my work</a>
+            <a className="btn ghost" href="#projects">See my work</a>
           </div>
           <p className="small">{profile.location}</p>
         </div>
         <figure className="arch"><img src={base + 'images/headshot.jpg'} alt="Mohit Bhat smiling in a maroon velvet blazer" /></figure>
       </div></section>
 
-      <Section id="services" title="How I can help" intro="Four kinds of teams I enjoy working with. If yours is a bit different, tell me. I'm open to other projects too.">
+      {/* <Section id="services" title="How I can help" intro="Four kinds of teams I enjoy working with. If yours is a bit different, tell me. I'm open to other projects too.">
         <div className="cards">{services.map(s => (
           <article className="card" key={s.title}><span className="chip">{s.tag}</span><h3>{s.title}</h3><p>{s.text}</p></article>))}
         </div>
-      </Section>
+      </Section> */}
 
-      <Section id="work" title="Case study: student engagement at Mays Business School" intro={caseStudy.role}>
-        <div className="acc">{caseStudy.points.map(([h, t], i) => (
+      {/* <Section id="projects" title="Case study: student engagement at Mays Business School" intro={caseStudy.role}> */}
+      {/* <Section id='projects' title='Projects' intro={caseStudy.role}> */}
+      <Section id='projects' title='My Side Quests'>
+        {/* <div className="acc">{caseStudy.points.map(([h, t], i) => (
           <div key={h} className={'accitem' + (open === i ? ' on' : '')}>
             <button aria-expanded={open === i} onClick={() => setOpen(open === i ? -1 : i)}>{h}<span aria-hidden>{open === i ? '–' : '+'}</span></button>
             {open === i && <p>{t}</p>}
           </div>))}
-        </div>
-        <h3 className="subh">Something I built</h3>
+        </div> */}
+        {/* <h3 className="subh">Something I built</h3> */}
+        <div className='projlist'>
         {projects.map(p => (
           <article className="proj" key={p.name}>
             <div><h3>{p.name}</h3><p>{p.blurb}</p>
               <p className="stack">{p.stack.join(', ')}</p></div>
             <div className="projlinks">
-              <a className="btn" href={p.live} target="_blank" rel="noreferrer">Open live site</a>
+              {p.live && <a className="btn" href={p.live} target="_blank" rel="noreferrer">Open live site</a>}
               <a className="btn ghost" href={p.repo} target="_blank" rel="noreferrer">View code</a>
             </div>
           </article>))}
+          </div>
       </Section>
 
-      <Section id="about" title="A bit about me" intro="Before the spreadsheets: a software developer with a master's in information systems. Off the clock: a ball, a book, and a big question.">
+      {/* <Section id="about" title="A bit about me" intro="Before the spreadsheets: a software developer with a master's in information systems. Off the clock: a ball, a book, and a big question."> */}
+      <Section id='experience' title="Experience">
         <div className="tl">{experience.map(e => (
           <div className="tli" key={e.role}><b>{e.role}</b> <span>{e.org} · {e.when}</span><p>{e.text}</p></div>))}</div>
         <p className="small">{education}</p>

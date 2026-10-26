@@ -12,7 +12,7 @@
     7. Hero section
     8. Services cards
     9. Case study: accordion and project card
-   10. About: timeline, skills, hobbies
+   10. Experience: timeline, skills, hobbies
    11. Contact panel and footer
    12. Animations
    13. Responsive (mobile)
@@ -394,6 +394,12 @@ nav a:hover {
   margin: 44px 0 12px;
 }
 
+.projlist{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 /* --- Project card: text on the left, buttons on the right --- */
 .proj {
   display: flex;
@@ -432,7 +438,7 @@ nav a:hover {
 
 
 /* ==========================================================================
-   10. ABOUT: TIMELINE, SKILLS, HOBBIES
+   10. Experience: TIMELINE, SKILLS, HOBBIES
    ========================================================================== */
 
 /* --- Experience timeline: one left border line, no images needed --- */
